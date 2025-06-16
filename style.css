@@ -1,0 +1,88 @@
+/* Sony Dynamicron T-120 Dark Theme */
+
+/* Base Colors */
+:root {
+    --t120-yellow: #efcf4a;  /* Bright Yellow */
+    --t120-orange: #d95525;  /* Vibrant Orange */
+    --t120-red: #cc3b2c;     /* Deep Red */
+    --t120-burgundy: #9d2c44;/* Rich Burgundy */
+    --t120-maroon: #6f364f;  /* Dark Maroon */
+
+    /* Backgrounds */
+    --bg-primary: #121212;   /* Deep Black */
+    --bg-secondary: #1e1e1e; /* Charcoal */
+    --bg-tertiary: #2a2a2a;   /* Dark Gray */
+
+    /* Text Colors */
+    --text-primary: #f5f5f5; /* Light Gray */
+    --text-secondary: #b0b0b0; /* Muted Gray */
+    --text-accent: var(--t120-yellow); /* Accent Color */
+
+    /* UI Elements */
+    --button-bg: var(--t120-orange);
+    --button-bg-hover: var(--t120-red);
+    --link-color: var(--t120-yellow);
+    --link-hover: var(--t120-orange);
+}
+
+/* Global Styles */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Buttons */
+button {
+    background-color: var(--button-bg);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+/* Header */
+header {
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: var(--text-secondary);
+    margin: 0;
+}
