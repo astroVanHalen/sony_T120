@@ -1,7 +1,0 @@
-| CSS Variable Name | Hex Code | RGB Value         | Color Name     |
-| ----------------- | -------- | ----------------- | -------------- |
-| --t120-yellow     | #efcf4a  | rgb(239, 207, 74) | Bright Yellow  |
-| --t120-orange     | #d95525  | rgb(217, 85, 37)  | Vibrant Orange |
-| --t120-red        | #cc3b2c  | rgb(204, 59, 44)  | Deep Red       |
-| --t120-burgundy   | #9d2c44  | rgb(157, 44, 68)  | Rich Burgundy  |
-| --t120-maroon     | #6f364f  | rgb(111, 54, 79)  | Dark Maroon    | 
