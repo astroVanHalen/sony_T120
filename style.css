@@ -1,88 +1,82 @@
-/* Sony Dynamicron T-120 Dark Theme */
-
-/* Base Colors */
+/* === Sony Dynamicron Color System === */
 :root {
-    --t120-yellow: #efcf4a;  /* Bright Yellow */
-    --t120-orange: #d95525;  /* Vibrant Orange */
-    --t120-red: #cc3b2c;     /* Deep Red */
-    --t120-burgundy: #9d2c44;/* Rich Burgundy */
-    --t120-maroon: #6f364f;  /* Dark Maroon */
+  /* Primary Colors */
+  --sony-yellow0-hard: #f2e197;   /* Golden Yellow Hard */
+  --sony-yellow0: #efcf4a;        /* Golden Yellow */
+  --sony-yellow0-soft: #e5c93f;   /* Golden Yellow Soft */
+  --sony-orange0: #d95525;        /* Bright Orange-Red */
+  --sony-orange0-soft: #e26535;   /* Bright Orange-Red Soft */
+  --sony-red0: #cc3b2c;           /* Deep Crimson */
+  --sony-red0-soft: #d24c3f;      /* Deep Crimson Soft */
+  --sony-magenta0: #9d2c44;       /* Rich Magenta */
+  --sony-magenta0-soft: #aa3a57;  /* Rich Magenta Soft */
+  --sony-plum0: #6f364f;          /* Muted Plum */
+  --sony-plum0-soft: #7d4760;     /* Muted Plum Soft */
 
-    /* Backgrounds */
-    --bg-primary: #121212;   /* Deep Black */
-    --bg-secondary: #1e1e1e; /* Charcoal */
-    --bg-tertiary: #2a2a2a;   /* Dark Gray */
+  /* === Light Theme Colors === */
+  --bg-light0: #fbf1c7;             /* Creamy base */
+  --bg-light1: #f9e6c2;
+  --bg-light2: #f5d2b0;
+  --bg-light3: #eec0c3;
+  --bg-accent-light: #d95525;
+  --bg-highlight-light: #9d2c44;
 
-    /* Text Colors */
-    --text-primary: #f5f5f5; /* Light Gray */
-    --text-secondary: #b0b0b0; /* Muted Gray */
-    --text-accent: var(--t120-yellow); /* Accent Color */
+  --fg-light0: #1a1a1a;
+  --fg-light1: #6f364f;
+  --fg-light-muted: #665c54;
+  --fg-light-accent: #efcf4a;
 
-    /* UI Elements */
-    --button-bg: var(--t120-orange);
-    --button-bg-hover: var(--t120-red);
-    --link-color: var(--t120-yellow);
-    --link-hover: var(--t120-orange);
+  /* === Dark Theme Colors === */
+  --bg-dark0: #1a1a1a;
+  --bg-dark1: #2a2023;
+  --bg-dark2: #3b262c;
+  --bg-dark3: #4e2a36;
+  --bg-accent-dark: #9d2c44;
+  --bg-highlight-dark: #d95525;
+
+  --fg-dark0: #ffffff;
+  --fg-dark1: #efcf4a;
+  --fg-dark-muted: #a89984;
+  --fg-dark-accent: #cc3b2c;
 }
 
-/* Global Styles */
-body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s, color 0.3s;
-}
+/* === Background Utility Classes === */
+.bg-light0         { background-color: var(--bg-light0); }
+.bg-light1         { background-color: var(--bg-light1); }
+.bg-light2         { background-color: var(--bg-light2); }
+.bg-light3         { background-color: var(--bg-light3); }
+.bg-accent-light   { background-color: var(--bg-accent-light); }
+.bg-highlight-light{ background-color: var(--bg-highlight-light); }
 
-a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
+.bg-dark0          { background-color: var(--bg-dark0); }
+.bg-dark1          { background-color: var(--bg-dark1); }
+.bg-dark2          { background-color: var(--bg-dark2); }
+.bg-dark3          { background-color: var(--bg-dark3); }
+.bg-accent-dark    { background-color: var(--bg-accent-dark); }
+.bg-highlight-dark { background-color: var(--bg-highlight-dark); }
 
-a:hover {
-    color: var(--link-hover);
-}
 
-/* Buttons */
-button {
-    background-color: var(--button-bg);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+/* === Foreground/Text Utility Classes === */
+.text-light0         { color: var(--fg-light0); }
+.text-light1         { color: var(--fg-light1); }
+.text-light-muted    { color: var(--fg-light-muted); }
+.text-light-accent   { color: var(--fg-light-accent); }
 
-button:hover {
-    background-color: var(--button-bg-hover);
-}
+.text-dark0          { color: var(--fg-dark0); }
+.text-dark1          { color: var(--fg-dark1); }
+.text-dark-muted     { color: var(--fg-dark-muted); }
+.text-dark-accent    { color: var(--fg-dark-accent); }
 
-/* Header */
-header {
-    background-color: var(--bg-secondary);
-    padding: 20px;
-    text-align: center;
-}
 
-header h1 {
-    color: var(--text-primary);
-    margin: 0;
-}
+/* === Sony Core Colors for Elements === */
+.bg-sony-yellow      { background-color: var(--sony-yellow0); }
+.bg-sony-orange      { background-color: var(--sony-orange0); }
+.bg-sony-red         { background-color: var(--sony-red0); }
+.bg-sony-magenta     { background-color: var(--sony-magenta0); }
+.bg-sony-plum        { background-color: var(--sony-plum0); }
 
-/* Footer */
-footer {
-    background-color: var(--bg-secondary);
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    color: var(--text-secondary);
-    margin: 0;
-}
+.text-sony-yellow    { color: var(--sony-yellow0); }
+.text-sony-orange    { color: var(--sony-orange0); }
+.text-sony-red       { color: var(--sony-red0); }
+.text-sony-magenta   { color: var(--sony-magenta0); }
+.text-sony-plum      { color: var(--sony-plum0); }
