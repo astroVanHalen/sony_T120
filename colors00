@@ -1,0 +1,11 @@
+--sony-yellow0-hard: #f2e197;   /* Golden Yellow Hard */
+--sony-yellow0: #efcf4a;        /* Golden Yellow */
+--sony-yellow0-soft: #e5c93f;   /* Golden Yellow Soft */
+--sony-orange0: #d95525;        /* Bright Orange-Red */
+--sony-orange0-soft: #e26535;   /* Bright Orange-Red Soft */
+--sony-red0: #cc3b2c;           /* Deep Crimson */
+--sony-red0-soft: #d24c3f;      /* Deep Crimson Soft */
+--sony-magenta0: #9d2c44;       /* Rich Magenta */
+--sony-magenta0-soft: #aa3a57;  /* Rich Magenta Soft */
+--sony-plum0: #6f364f;          /* Muted Plum */
+--sony-plum0-soft: #7d4760;     /* Muted Plum Soft */
