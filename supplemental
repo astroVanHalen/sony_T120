@@ -1,0 +1,28 @@
+/* === Backgrounds: Dark Theme === */
+--bg-dark0: #1a1a1a;              /* Deep base background */
+--bg-dark1: #2a2023;              /* Slight magenta hint */
+--bg-dark2: #3b262c;              /* Very dark crimson blend */
+--bg-dark3: #4e2a36;              /* Plum depth */
+--bg-accent-dark: #9d2c44;        /* Rich Magenta accent */
+--bg-highlight-dark: #d95525;     /* Bright Orange-Red highlight */
+
+/* === Foregrounds: Dark Theme === */
+--fg-dark0: #ffffff;              /* Pure white for top contrast */
+--fg-dark1: #efcf4a;              /* Golden Yellow for headings/text highlights */
+--fg-dark-muted: #a89984;         /* Muted readable text */
+--fg-dark-accent: #cc3b2c;        /* Deep crimson for key emphasis */
+
+
+/* === Backgrounds: Light Theme === */
+--bg-light0: #fbf1c7;             /* Creamy base */
+--bg-light1: #f9e6c2;             /* Yellow-tinted highlight */
+--bg-light2: #f5d2b0;             /* Orange blush */
+--bg-light3: #eec0c3;             /* Warm magenta touch */
+--bg-accent-light: #d95525;       /* Bright Orange-Red */
+--bg-highlight-light: #9d2c44;    /* Rich Magenta */
+
+/* === Foregrounds: Light Theme === */
+--fg-light0: #1a1a1a;             /* Default dark text */
+--fg-light1: #6f364f;             /* Plum tone emphasis */
+--fg-light-muted: #665c54;        /* Subdued but readable */
+--fg-light-accent: #efcf4a;       /* Golden Yellow highlight */
